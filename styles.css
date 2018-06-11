@@ -1,0 +1,1191 @@
+/* Color Palette
+#ff2020 red
+#fff white
+#000 black
+#d1d3d4 light grey
+#777777 medium grey
+#222222 dark grey
+#2969b0 light blue
+
+font-family: 'Lato', sans-serif;
+font-family: "Roboto Slab", serif;
+/*
+----------------------------------------------------------------------------------------------------
+        GLOBAL PAGE STYLES
+----------------------------------------------------------------------------------------------------
+*/
+/* Global Styles
+---------------------------*/
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+    font-family: 'Lato', Arial, sans-serif;
+    color: #000;
+    margin: 0;
+}
+h1, h2 {
+    font-family: 'Lato', Arial, serif;
+	color: #000000;
+	padding-top: 1.5rem;
+}
+h1{
+    font-size: 2rem;
+	font-weight: 700;
+}
+h2 {
+    font-size: 1rem;
+    font-family: "Roboto Slab", serif;
+	font-weight: 400;
+	padding: 0;
+}
+h3 {
+    font-family: "Roboto Slab", serif;
+    margin: 0;
+    font-size: 1.5rem;
+    color: #ff2020;
+}
+h4 {
+    position: relative;
+    left: -200px;
+    display: inline-block;
+    font-family: "Roboto Slab", serif;
+    margin: 10px 10%;
+    border-left: 200px solid #ff2020;
+    padding: 10px 10px 10px 0px;
+    font-size: 1.5rem;
+    background: #ff2020;
+    color: #fff;
+}
+a {
+    color: #ffffff;
+}
+a:hover {
+    text-decoration: none;
+    color: #333;
+/*    background: #d1d3d4;*/
+}
+.content-wrap {
+    text-align: center;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 60px 50px;
+    overflow: auto;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+.btn {
+    font-size: 0.8rem;
+    text-decoration: none;
+    background: #FF0000;
+    color: #fff;
+    padding: 10px;
+    display: inline-block;
+    transition: all 0.5s ease;
+    border-radius: 10px;
+    border: solid 2px #fff;
+}
+.btn:hover {
+	background: #fff;
+/*    color: #777;*/
+}
+p {
+    line-height: 130%
+}
+/* Header and footer
+---------------------------*/
+header {
+    background: #ffffff;
+    color: #000;
+    margin-bottom: -60px
+}
+/*---------------Navigation*/
+    /* LARGE */
+nav {
+    font-weight: 700;
+    text-align: center;
+    background: #ff2020;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 200;
+}
+nav a {
+    display: inline-block;
+    margin: 0 10px 10px 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ff2020;
+    min-width: 160px;
+/*    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
+    padding: 0.75rem 2rem;
+    z-index: 200;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown a {
+    color: #333;
+}
+.dropdown a:hover {
+    color: #fff;
+}
+.uppercase.navdrop {
+    color: #fff;
+}
+.logohome {
+    width: 50px;
+    display: inline-block;
+    border: 2px solid #fff;
+}
+.contactbtn {
+    margin-top: 10px;
+}
+.navdrop, .login {
+    position: relative;
+    top: -10px;
+}
+    /* SMALL */
+.fa-bars {
+    color: white;
+    background: #ff2020;
+    font-size: 2rem;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+} 
+/* header*/
+header{
+    padding-top: 40px;
+/*    position: relative;*/
+}
+header h1, header h2 {
+    color: #000;
+    margin: 0;
+/*    line-height: 20%*/
+}
+.logoimg {
+    max-width: 215px;
+}
+.lalign {
+    text-align: left;
+}
+/*footer*/
+.contact {
+    color: white;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), 
+                                rgba(0, 0, 0, 0.8)),url(../images/flaglogo.png) no-repeat fixed;
+    background-size: fill;
+    background-position: bottom; 
+    border-bottom: 0;
+}
+footer {
+text-align: center;
+margin-top: 20px;
+}
+footer p {
+    padding-bottom: 20px;
+}
+.contactsocmedia a{
+    display:block;
+    font-size: 3rem;
+    margin: 10px -35% 10px 10px;
+}
+.contactsocmedia a:hover {
+    color: #ff2020;
+}
+@media (max-width: 927px) {
+    .contactsocmedia a{
+        display: inline-block;
+        font-size: 2rem;
+        margin: 0;
+        padding: 10px;
+        }
+}
+/*Main Content
+---------------------------*/
+
+/*Media Queries
+---------------------------*/
+/*Large*/
+@media (min-width: 928px) {
+        html {
+        font-size: 16px;
+    }
+        .colwide {
+        width: 65%;
+        float: left;
+        padding-left: 20px;
+        min-height: 160px;
+    }
+    .colnarrow {
+        width: 35%;
+        float: left;
+    }
+    .navsmall {
+        display: none;
+    }
+}
+/*Small*/
+@media (max-width: 927px){
+    html {
+        font-size: 16px;
+    }
+    header {
+        text-align: center;
+    }
+    .logoimg {
+        width: 100px;
+    }
+    .navlarge {
+        display: none;
+    }
+    .logohome {
+        position: fixed;
+        left: 10px;
+    }
+    .navsmallbg {
+        background-color: #ff2020;
+        position: fixed;
+        width: 100%;
+        height: 50px
+    }
+    /*Hamburger Menu*/
+.overlay {   
+    height: 100%;
+    width: 0%;
+    position: fixed; 
+    z-index: 1; 
+    right: 0;
+    top: 0;
+    background-color: rgb(255, 32, 32); 
+    background-color: rgba(255, 32, 32, 0.9); 
+    overflow-x: hidden; 
+    transition: 0.5s ease-out;
+}
+.overlay-content {
+    position: relative;
+    line-height: 170%;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.overlay a {
+    padding-top: 0px;
+    text-decoration: none;
+    font-size: 2rem;
+    color: #f1f1f1;
+    display: block;
+    transition: 0.3s;
+}
+    .overlay p {
+        font-family: "Roboto Slab", serif;
+        color: #333;
+        font-size: 2rem;
+        margin: 15px;
+        padding-bottom: 15px;
+    }
+.overlay a:hover, .overlay a:focus {
+    color: #333;
+}
+.overlay .closebtn {
+    position: absolute;
+    padding: 30px;
+    top: -15px;
+    right: 0;
+    margin: 0 -20px;
+    color: rgba(255, 32, 32, 0.01);
+    z-index: 1;
+}
+    #navclose:hover {
+        color: rgba(255, 32, 32, 0.01);
+    }
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 1rem}
+    .overlay .closebtn {
+        font-size: 2rem;
+        top: 15px;
+        right: 35px;
+    }
+}
+}
+/*
+----------------------------------------------------------------------------------------------------
+        404
+----------------------------------------------------------------------------------------------------
+*/
+.fourohfour {
+/*    background: #ff2020;*/
+    background: linear-gradient(rgba(255, 32, 32, 0.6), 
+                                rgba(255, 32, 32, 0.6)),url(../images/broken-glass.svg) no-repeat fixed;
+    background-size: cover;
+    background-position: top; 
+    margin-top: 90px;
+    height: 2000px;
+}
+.fourohfour h2, .fourohfour p {
+    background: #fff;
+    margin: 0 10%;
+    padding: 1rem 1rem 0;
+}
+.fourohfour ul {
+    background: #fff;
+    margin: 0 10%;
+    padding: 5px 2rem 1rem;
+}
+.fourohfour li {
+    margin-top: 5px;
+}
+/*
+----------------------------------------------------------------------------------------------------
+        HOME
+----------------------------------------------------------------------------------------------------
+*/
+.vanimg {
+    width: 100%;
+}
+.boximg {
+    width: 100%;
+}
+.introbox {
+    position: relative; 
+    margin: 0 0 20px 0;
+}
+.introbox .intro { 
+    margin: 0 auto;
+    position: absolute;
+    bottom: 3px;
+    background: rgba(255, 32, 32, 0.8);
+    color: #fff;
+    width: 100%;
+    padding: 15px 30px;
+}
+.homeh3 {
+    color: #333;
+}
+.homeh4 {
+    margin: 0 5%;
+}
+.homebox {
+    position: relative;
+    margin: 0 10% 0 10%;
+     
+}
+.homebox .homecontent {
+    margin: 0;
+    position: absolute;
+    bottom: 3px;
+    background: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    width: 100%;
+    padding: 15px;
+}
+.homebox a {
+    text-decoration: none;
+    font-family: "Roboto Slab", serif;
+    margin: 0;
+    font-size: 1.5rem;
+    color: #ff2020;
+}
+.homebox a:hover {
+    color: #f1f1f1;
+}
+.homegrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px 0;
+}
+.socialmedia {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 15px;
+    margin: 20px 10% 0 10%;;
+}
+@media (max-width: 927px) {
+    .vanimg {
+        margin: 20px 0 -6%;
+    }
+    .homegrid {
+        display:block;
+    }
+    .socialmedia {
+        display: block;
+    }
+    .facebook {
+        display: none;
+    }
+    .introbox {
+        margin-top: 0;
+        padding-bottom: 25%;
+    }
+    .intro {
+        display: block;
+        position: static;
+    }
+}
+@media (max-width: 443px) {
+    .vanimg {
+        display: none;
+    }
+    .introbox {
+        margin-top: 50%;
+    }
+    .homeh3 {
+        font-size: 1rem;
+    }
+    .homeh4 {
+        display: none;
+    }
+}
+/*
+----------------------------------------------------------------------------------------------------
+        OVERVIEW
+----------------------------------------------------------------------------------------------------
+*/
+/*.overview {
+        margin: 10px 10%;
+}*/
+@media (min-width: 928px) { 
+    .griditem {
+        width: 250px;
+        padding: 10px;
+    }
+    .imagegrid {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 0 10%;
+    }
+}
+@media (max-width: 927px) {
+    .imagegrid {
+        display: none;
+    }
+}
+/*
+----------------------------------------------------------------------------------------------------
+        REFERENCES
+----------------------------------------------------------------------------------------------------
+
+.reference {
+    margin: 0 10%;
+}
+.reference, h2 {
+    margin-top: 10px;
+}
+.serveone {
+    display: flex;
+    justify-content: space-around;
+}
+.smallh3 {
+    margin-top: 15px;
+}
+@media (min-width: 600px) {
+    /* Slideshow */
+      .slideshow-container {
+      position: relative;
+      background: #ffc2c2;
+          margin: 20px 10% 0;
+    }
+
+    /* Slides */
+    .mySlides {
+      display: none;
+      padding: 80px;
+      text-align: center;
+    }
+
+    /* Next & previous buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -30px;
+      padding: 16px;
+      color: #ba1818;
+      font-size: 2.5rem;
+      border-radius: 0 20px 20px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      position: absolute;
+      right: 0;
+      border-radius: 20px 0 0 20px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.5);
+      color: #f1f1f1;
+    }
+
+    /* The dot/bullet/indicator container */
+    .dot-container {
+      text-align: center;
+      padding: 20px;
+      background: #ba1818;
+      margin: 0 10% 20px;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #d38383;
+      border-radius: 3px;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    /* Add a background color to the active dot/circle */
+    .active, .dot:hover {
+      background-color: #333;
+    }
+
+    /* Add an italic font style to all quotes */
+    q {
+        font-style: italic;
+        color: #333;
+        font-size: 1.5rem;
+    }
+
+    /* Add a blue color to the author */
+    .author {
+        color: #ba1818;
+        font-family: "Roboto Slab", serif;
+        margin-bottom: 5px;
+        }
+    .location {
+        color: #fff;
+        font-family: "Roboto Slab", serif;
+        font-size: 0.8rem;
+        margin: 0;   
+        }
+    q:before {
+        font-family: "Arial Black";
+        content: '\201C';
+        position: absolute;
+        top: 0.02rem;
+        left: 3.95rem;
+        color: #Dfa4a4;
+        font-size: 6rem;
+        }
+    q:after {
+        font-family: "Arial Black";
+        content: '\201D';
+        position: absolute;
+        bottom: 1.5rem;
+        right: 6rem;
+        color: #Dfa4a4;
+        font-size: 6rem;
+        }
+}  
+@media (max-width: 600px) {
+    .slideshow-container {
+      position: relative;
+      background: #ffc2c2;
+        margin-top: 20px;
+    }
+
+    .mySlides {
+      display: none;
+      padding: 50px;
+      text-align: center;
+    }
+
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -30px;
+      padding: 30px 30px 30px 15px;
+      color: #ba1818;
+      font-size: 40px;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    .next {
+      position: absolute;
+      right: 0;
+      border-radius: 3px 0 0 3px;
+      padding: 30px 15px 30px 30px;
+    }
+
+    .dot-container {
+      text-align: center;
+      padding: 20px;
+      background: #ba1818;
+      margin-bottom: 10px;
+    }
+
+    .dot {
+      height: 10px;
+      width: 10px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active, .dot:hover {
+      background-color: #333;
+    }
+    
+    q {
+        font-style: italic;
+        color: #333;
+    }
+
+    .author {
+        color: #ba1818;
+        font-family: "Roboto Slab", serif;
+        margin-bottom: 5px;
+        }
+    .location {
+        color: #fff;
+        font-family: "Roboto Slab", serif;
+        font-size: 0.8rem;
+        margin: 0;  
+}
+    .smallh3 {
+        font-size: 1rem;
+    }
+    .referenceh4 {
+        display: none;
+    }
+}
+/*
+----------------------------------------------------------------------------------------------------
+        CONTACT
+----------------------------------------------------------------------------------------------------
+*/
+.contactgrid {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.contactgriditem {
+    padding: 10px;
+}
+.contactgriditem:nth-child(2n) {
+    background: rgba(255, 32, 32, 0.8);
+    color: #fff;
+}
+.contacttwosocmedia a {
+        color: #333;
+        text-decoration: none;
+        font-size: 1.5rem;
+        padding: 10px;
+        line-height: 180%;
+}
+.contacttwosocmedia a:hover {
+    color: #ff2020;
+}
+.contact-form h2{
+    margin: 20px 10%;
+}
+.calllink a {
+    color: #333;
+}
+@media (max-width: 927px) {
+    .contactgrid{
+        display:block;
+        margin: 0;
+        }
+    .contactgrid p {
+        margin: 10px 10%;
+    }
+    .contactgrid h3 {
+        margin: 0 10%;
+    }
+    .contacttwosocmedia a {
+        padding: 10px 10%;
+    }
+}
+/*
+----------------------------------------------------------------------------------------------------
+        FAQ
+----------------------------------------------------------------------------------------------------
+*/
+.faq {
+    margin: 0 10%;
+}
+/*
+----------------------------------------------------------------------------------------------------
+        ALARM SYTEMS
+----------------------------------------------------------------------------------------------------
+*/
+.contactgriditem img {
+    width: 100%;
+}
+#ultrasyncmodular {
+    width: 40%;
+    margin: 0 30%;
+}
+@media (max-width: 927px) {
+    .contactgriditem img {
+        width: 70%;
+        margin: 0 15% 15px;
+    }
+    #ultrasyncmodular {
+    width: 40%;
+    margin: 0 30% 15px;
+}
+}
+    /*
+----------------------------------------------------------------------------------------------------
+        CAMERA SYSTEMS
+----------------------------------------------------------------------------------------------------
+*/
+.camera ul {
+list-style-image: url('/images/css-favicon.svg');
+    font-size: 2rem; 
+}
+.camera p {
+	font-size: 1rem;
+}
+.camera {
+    margin: 0 10% 40%;
+}
+.camera li {
+    line-height: 150%
+}
+@media (max-width: 927px){
+    .camera {
+    margin: 0 10%;
+}
+    .camera img {
+    width: 100%;
+    }
+}
+    /*
+----------------------------------------------------------------------------------------------------
+        ACCESS CONTROL
+----------------------------------------------------------------------------------------------------
+*/
+.access {
+    margin: 0 10%;
+}
+.access h3 {
+    margin-top: 40%
+}
+.access img {
+    margin: 5% 0;
+}
+.access p {
+    margin-bottom: 5%;
+}
+#truapp {
+    width: 70%;
+    margin: 0 15%;
+}
+@media (max-width: 927px){
+    .access img {
+    width: 100%;
+    }
+    .access h3 {
+    margin-top: 20px;    
+    }
+}
+    /*
+----------------------------------------------------------------------------------------------------
+        GATES AND BARS
+----------------------------------------------------------------------------------------------------
+*/
+.xpanda, .goodbar {
+    margin: 0 10%;
+}
+.goodbar {
+    padding-bottom: 38%;
+}
+.goodbar img {
+    width: 60%;
+    margin-top: 3%; 
+}
+.goodbar .colnarrow {
+    position: absolute;
+    left: 45%;
+    margin-top: 10%
+}
+/*Image Slideshow*/
+.container {
+  position: relative;
+  box-sizing: border-box;
+}
+
+/* Hide the images by default */
+.moreSlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+.gates.prev, .gates.next {
+      cursor: pointer;
+      position: absolute;
+      top: 40%;
+      width: auto;
+      margin-top: -30px;
+      padding: 30px 30px 30px 15px;
+      color: #fff;
+      font-size: 40px;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    .gates.next {
+      position: absolute;
+      right: 0;
+      border-radius: 3px 0 0 3px;
+      padding: 30px 15px 30px 30px;
+}
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.4;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+@media (max-width: 927px) {
+    .container {
+        display: none;
+    }
+    .goodbar img {
+        display: none;
+    }
+    .goodbar .colnarrow {
+        position: static;
+        margin: 0;
+    }
+    .goodbar {
+        padding-bottom: 0;
+    }
+}
+@media (min-width: 1200px) {
+    .xpanda .colnarrow {
+    margin-top: 10%;
+}
+}
+    /*
+----------------------------------------------------------------------------------------------------
+        HOME AUTOMATION
+----------------------------------------------------------------------------------------------------
+*/
+embed {
+    width: 100%;
+    height: 600px;
+    margin: auto;
+}
+.homeauto {
+    margin: 0 10%;
+}
+.hovertour {
+    margin-bottom: 800px;
+}
+.hovertour img {
+        max-width: 800px;
+        position: absolute;
+        left: 10%;
+    }
+
+.icondropdown {
+    font-weight: 700;
+    text-align: center;
+    background: #286fb4;
+    position: fixed;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    z-index: 180;
+}
+.icondropdown a {
+    color: #fff;
+    display: inline-block;
+    margin: 0;
+    padding: 14px 5px 0;
+    text-decoration: none;
+}
+.icondropdown {
+    position: relative;
+    display: inline-block;
+}
+.icondropdown-content {
+    display: none;
+    position: absolute;
+    left: -100px;
+    background-color: #286fb4;
+    min-width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 0.75rem 2rem;
+    z-index: 210;
+}
+.icondropdown:hover .icondropdown-content {
+    display: block;
+}
+.icondropdown a:hover {
+    color: #333;
+}
+.icondrop {
+    color: #fff;
+    position: relative;
+    top: -10px;
+    font-size: 1.3rem;
+}
+.hovertour h2 {
+    color: #fff;
+}
+
+.hoverone {
+    top: 325px;
+    left: 687px;
+    z-index: 192;
+}
+.hovertwo {
+    top: 474px;
+    left: 215px;
+    z-index: 189;
+}
+.hoverthree {
+    top: 390px;
+    left: 560px;
+    z-index: 191;
+}
+.hoverfour {
+    top: 430px;
+    left: 369px;
+    z-index: 190;
+}
+.hoverfive {
+    top: 485px;
+    left: 216px;
+    z-index: 189;
+}
+.hoversix {
+    top: 494px;
+    left: 326px;
+    z-index: 181;
+}
+.hoverseven {
+    top: 263px;
+    left: -7px;
+    z-index: 190;
+}
+.hovereight {
+    top: 451px;
+    left: 58px;
+    z-index: 189;
+}
+.hovernine {
+    top: 662px;
+    left: -73px;
+}
+.hoverten {
+    top: 528px;
+    left: 55px;
+    z-index: 180;
+}
+
+.hoverdescription {
+    color: #fff;
+    position: absolute;
+    display: inline-block;
+    background: #286fb4;
+    padding: 10px;
+    z-index: 190;
+}
+.appstore {
+    display: none;
+    overflow:hidden; background:url(https://linkmaker.itunes.apple.com/assets/shared/badges/en-us/appstore-lrg.svg) no-repeat;
+    width: 50%;
+    height: 30px;
+    background-size: contain;
+    margin: 1.2% -35px 1.3% 10%;
+}
+.playstore {
+    height: 45px;
+    display: none;
+}
+.links {
+    display: flex;
+    justify-content: space-around;
+    background: #ff2020;
+    margin: 0 -20%;
+}
+.links a{
+    text-decoration: none;
+    background: #ff2020;
+    color: #fff;
+    font-family: "Roboto Slab", serif;
+    padding: 20px;
+    text-align: center;
+    margin: 0 10%
+}
+.links a:hover {
+    color: #333;
+}
+.links .fas {
+    font-size: 3rem;
+    margin: 5px;
+}
+@media (min-width: 1200px) {
+    .appoverview {
+        position: absolute;
+        margin-left: 65%;
+        width: 20%;
+        top: 110%;
+    }
+    .appoverview img {
+        width: 80%;
+    }
+}
+@media (max-width: 1200px) {
+    .appoverview {
+        position: static;
+        width: 100%;
+        margin: 0;
+    }
+    .appoverview img {
+        width: 80%;
+        margin: 30% 10% 0;
+    }
+    .hovertour {
+        margin-bottom: 500px;
+    }
+}
+@media (max-width: 927px) {
+    embed {
+        height: 400px;
+        margin-top: 20px;
+    }
+    .icondropdown {
+        width: 30px;
+        height: 30px;
+    }
+    .icondrop {
+        top: -9px;
+    font-size: 1rem;
+    }
+    .hovertour img {
+        width: 530px;
+    }
+    .hoverone {
+    top: 212px;
+    left: 452px;
+    z-index: 190;
+    }
+    .hovertwo {
+        top: 311px;
+        left: 131px;
+        z-index: 189;
+    }
+    .hoverthree {
+        top: 256px;
+        left: 351px;
+        z-index: 189;
+    }
+    .hoverfour {
+        top: 282px;
+        left: 216px;
+        z-index: 190;
+    }
+    .hoverfive {
+        top: 318px;
+        left: 107px;
+        z-index: 189;
+    }
+    .hoversix {
+        top: 324px;
+        left: 172px;
+    }
+    .hoverseven {
+        top: 171px;
+        left: -57px;
+        z-index: 190;
+    }
+    .hovereight {
+        top: 295px;
+        left: -23px;
+        z-index: 189; 
+    }
+    .hovernine {
+        top: 435px;
+        left: -118px;
+    }
+    .hoverten {
+        top: 347px;
+        left: -41px;
+        z-index: 180;
+    }
+    .appoverview img {
+        margin-top: 0%;
+    }
+    .appstore, .playstore {
+        display: inline-block;
+    }
+    .links {
+    display: grid;
+    background: #ff2020;
+    margin: 5px 0 0 0;
+}
+.links a{
+    text-decoration: none;
+    background: #ff2020;
+    color: #fff;
+    font-family: "Roboto Slab", serif;
+    padding: 5px;
+    text-align: center;
+    margin: 5px;
+}
+.links a:hover {
+    color: #333;
+}
+.links .fas {
+    font-size: 2rem;
+    margin: 0;
+}
+}
+@media (max-width: 600px) {
+    embed {
+        height: 211px;
+    }
+    .hovertour {
+        display: none;
+    }
+    .hoverdescription { 
+        display: none;
+    }
+    .playstore {
+        margin-bottom: -3px;
+    }
+}
